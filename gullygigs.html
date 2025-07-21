@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gully Gigs - Experience the Rhythm of the Streets</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #4521FC; /* Darker blue background */
+        }
+        /* Custom colors for the theme */
+        .bg-primary-blue {
+            background-color: #4521FC; /* A deep, rich blue */
+        }
+        .text-primary-blue {
+            color: #4521FC;
+        }
+        .bg-accent-yellow {
+            background-color: #d8fc21; /* Bright neon yellow */
+        }
+        .text-accent-yellow {
+            color: #d8fc21;
+        }
+        .border-accent-yellow {
+            border-color: #d8fc21;
+        }
+        .hover\:bg-accent-yellow-dark:hover {
+            background-color: #b9d724; /* Slightly darker neon yellow for hover */
+        }
+        .hover\:text-primary-blue-light:hover {
+            color: #334e68; /* Lighter blue for text on yellow hover */
+        }
+        .hero-background {
+            background-image: url('https://placehold.co/1920x800#4521FC/eaff00?text=Dynamic+Street+Performance+Scene'); /* Placeholder for a dynamic street scene */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* Custom rounded corners for buttons */
+        .btn-rounded {
+            border-radius: 9999px; /* Fully rounded */
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <!-- Header -->
+        <header class="bg-primary-blue shadow-lg py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center rounded-b-xl">
+            <div class="flex items-center mb-4 md:mb-0">
+                <a href="#" class="text-3xl font-extrabold text-accent-yellow tracking-wider">Gully Gigs</a>
+            </div>
+            <nav class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-lg font-medium">
+                <a href="#" class="text-white hover:text-accent-yellow transition-colors duration-300 px-3 py-1 rounded-full">Home</a>
+                <a href="#" class="text-white hover:text-accent-yellow transition-colors duration-300 px-3 py-1 rounded-full">Events</a>
+                <a href="#" class="text-white hover:text-accent-yellow transition-colors duration-300 px-3 py-1 rounded-full">Artists</a>
+                <a href="#" class="text-white hover:text-accent-yellow transition-colors duration-300 px-3 py-1 rounded-full">About Us</a>
+                <a href="#" class="text-white hover:text-accent-yellow transition-colors duration-300 px-3 py-1 rounded-full">Contact</a>
+                <a href="#" class="bg-accent-yellow text-primary-blue px-6 py-2 rounded-full font-semibold hover:bg-accent-yellow-dark transition-colors duration-300 shadow-md ml-4">Sign In</a>
+                <a href="#" class="border-2 border-accent-yellow text-accent-yellow px-6 py-2 rounded-full font-semibold hover:bg-accent-yellow hover:text-primary-blue transition-colors duration-300 shadow-md ml-2">Sign Up</a>
+            </nav>
+        </header>
+
+    <!-- Hero Section -->
+    <section class="hero-background min-h-[600px] flex items-center justify-center text-center py-20 px-6 md:px-12 relative overflow-hidden rounded-xl mx-4 my-8">
+        <!-- Overlay for better text readability -->
+        <div class="absolute inset-0 bg-primary-blue opacity-70"></div>
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-accent-yellow leading-tight mb-6 animate-pulse">
+                Experience the Rhythm of the Streets
+            </h1>
+            <p class="text-xl md:text-2xl text-white mb-10 opacity-90">
+                Discover local talent, book unforgettable performances, or share your own unique sound.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <!-- Button for 'taking order' (finding talent) -->
+                <a href="#" class="bg-accent-yellow text-primary-blue text-xl font-bold px-10 py-4 btn-rounded shadow-lg hover:bg-accent-yellow-dark transition-all duration-300 transform hover:scale-105">
+                    Find Gigs <span class="ml-2">&#x2192;</span>
+                </a>
+                <!-- Button for 'giving order' (offering talent) -->
+                <a href="#" class="border-4 border-accent-yellow text-accent-yellow text-xl font-bold px-10 py-4 btn-rounded shadow-lg hover:bg-accent-yellow hover:text-primary-blue transition-all duration-300 transform hover:scale-105">
+                    List Your Gig <span class="ml-2">&#x2192;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-16 px-6 md:px-12 bg-primary-blue rounded-xl mx-4 my-8 shadow-inner">
+        <h2 class="text-4xl font-bold text-center text-accent-yellow mb-12">How Gully Gigs Works</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- For Gig Seekers -->
+            <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-2 border-accent-yellow transform hover:scale-105 transition-transform duration-300">
+                <div class="text-5xl text-accent-yellow mb-4 text-center">🎤</div>
+                <h3 class="text-2xl font-semibold text-white mb-4 text-center">For Gig Seekers</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li><span class="font-bold text-accent-yellow">Discover:</span> Browse a diverse range of local artists and performers.</li>
+                    <li><span class="font-bold text-accent-yellow">Book:</span> Easily book talent for your event, party, or venue.</li>
+                    <li><span class="font-bold text-accent-yellow">Enjoy:</span> Experience unique, live performances that bring your vision to life.</li>
+                </ul>
+                <div class="text-center mt-6">
+                    <a href="#" class="bg-accent-yellow text-primary-blue px-8 py-3 rounded-full font-semibold hover:bg-accent-yellow-dark transition-colors duration-300 shadow-md">
+                        Start Booking
+                    </a>
+                </div>
+            </div>
+
+            <!-- For Artists -->
+            <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-2 border-accent-yellow transform hover:scale-105 transition-transform duration-300">
+                <div class="text-5xl text-accent-yellow mb-4 text-center">🎸</div>
+                <h3 class="text-2xl font-semibold text-white mb-4 text-center">For Artists & Performers</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li><span class="font-bold text-accent-yellow">Showcase:</span> Create your profile and highlight your unique talents.</li>
+                    <li><span class="font-bold text-accent-yellow">Connect:</span> Get discovered by local venues and event organizers.</li>
+                    <li><span class="font-bold text-accent-yellow">Perform:</span> Find new opportunities to share your art and grow your audience.</li>
+                </ul>
+                <div class="text-center mt-6">
+                    <a href="#" class="bg-accent-yellow text-primary-blue px-8 py-3 rounded-full font-semibold hover:bg-accent-yellow-dark transition-colors duration-300 shadow-md">
+                        Join Gully Gigs
+                    </a>
+                </div>
+            </div>
+
+            <!-- Call to Action for both -->
+            <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-2 border-accent-yellow md:col-span-2 lg:col-span-1 flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-3xl font-bold text-white mb-4">Ready to get started?</h3>
+                <p class="text-lg text-gray-300 mb-6">Whether you're looking to book or perform, Gully Gigs is your stage.</p>
+                <a href="#" class="border-4 border-accent-yellow text-accent-yellow text-xl font-bold px-10 py-4 btn-rounded shadow-lg hover:bg-accent-yellow hover:text-primary-blue transition-all duration-300">
+                    Explore All Options
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Gigs/Artists Section -->
+    <section class="py-16 px-6 md:px-12 rounded-xl mx-4 my-8">
+        <h2 class="text-4xl font-bold text-center text-accent-yellow mb-12">Featured Talent & Upcoming Gigs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Featured Card 1 -->
+            <div class="bg-primary-blue p-6 rounded-xl shadow-lg border border-accent-yellow transform hover:-translate-y-2 transition-transform duration-300">
+                <img src="https://placehold.co/400x250/eaff00#4521FC?text=Artist+Image+1" alt="Featured Artist" class="w-full h-48 object-cover rounded-lg mb-4 border-2 border-accent-yellow">
+                <h3 class="text-2xl font-bold text-white mb-2">The Street Beats</h3>
+                <p class="text-accent-yellow text-lg font-medium mb-3">Genre: Hip-Hop / Rap</p>
+                <p class="text-gray-300 mb-4">Dynamic duo bringing raw energy and lyrical prowess to every performance.</p>
+                <div class="flex justify-between items-center">
+                    <a href="#" class="text-accent-yellow hover:underline text-lg font-semibold">View Profile</a>
+                    <button class="bg-accent-yellow text-primary-blue px-6 py-2 rounded-full font-semibold hover:bg-accent-yellow-dark transition-colors duration-300">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Featured Card 2 -->
+            <div class="bg-primary-blue p-6 rounded-xl shadow-lg border border-accent-yellow transform hover:-translate-y-2 transition-transform duration-300">
+                <img src="https://placehold.co/400x250#4521FC/eaff00?text=Gig+Image+1" alt="Featured Gig" class="w-full h-48 object-cover rounded-lg mb-4 border-2 border-accent-yellow">
+                <h3 class="text-2xl font-bold text-white mb-2">Open Mic Night</h3>
+                <p class="text-accent-yellow text-lg font-medium mb-3">Date: July 25, 2025 | Venue: The Alley Cafe</p>
+                <p class="text-gray-300 mb-4">Showcasing new and emerging talent in a cozy, intimate setting.</p>
+                <div class="flex justify-between items-center">
+                    <a href="#" class="text-accent-yellow hover:underline text-lg font-semibold">Event Details</a>
+                    <button class="bg-accent-yellow text-primary-blue px-6 py-2 rounded-full font-semibold hover:bg-accent-yellow-dark transition-colors duration-300">Get Tickets</button>
+                </div>
+            </div>
+
+            <!-- Featured Card 3 -->
+            <div class="bg-primary-blue p-6 rounded-xl shadow-lg border border-accent-yellow transform hover:-translate-y-2 transition-transform duration-300">
+                <img src="https://placehold.co/400x250/eaff00#4521FC?text=Artist+Image+2" alt="Featured Artist" class="w-full h-48 object-cover rounded-lg mb-4 border-2 border-accent-yellow">
+                <h3 class="text-2xl font-bold text-white mb-2">Rhythm & Flow Collective</h3>
+                <p class="text-accent-yellow text-lg font-medium mb-3">Genre: Fusion / World Music</p>
+                <p class="text-gray-300 mb-4">A collective of musicians blending traditional sounds with modern beats.</p>
+                <div class="flex justify-between items-center">
+                    <a href="#" class="text-accent-yellow hover:underline text-lg font-semibold">View Profile</a>
+                    <button class="bg-accent-yellow text-primary-blue px-6 py-2 rounded-full font-semibold hover:bg-accent-yellow-dark transition-colors duration-300">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <a href="#" class="border-4 border-accent-yellow text-accent-yellow text-xl font-bold px-10 py-4 btn-rounded shadow-lg hover:bg-accent-yellow hover:text-primary-blue transition-all duration-300">
+                View All Gigs & Artists
+            </a>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-accent-yellow text-primary-blue py-16 px-6 md:px-12 text-center rounded-xl mx-4 my-8 shadow-lg">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to make some noise?</h2>
+        <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
+            Whether you're looking for incredible talent or ready to share your own, Gully Gigs is where it happens.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+            <a href="#" class="bg-primary-blue text-accent-yellow text-xl font-bold px-10 py-4 btn-rounded shadow-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">
+                Join Gully Gigs Today!
+            </a>
+            <a href="#" class="border-4 border-primary-blue text-primary-blue text-xl font-bold px-10 py-4 btn-rounded shadow-lg hover:bg-primary-blue hover:text-accent-yellow transition-all duration-300 transform hover:scale-105">
+                Learn More
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-blue py-8 px-6 md:px-12 text-center text-gray-400 rounded-t-xl mt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto mb-6">
+            <div class="mb-4 md:mb-0">
+                <a href="#" class="text-3xl font-extrabold text-accent-yellow tracking-wider">Gully Gigs</a>
+                <p class="text-sm mt-2">&copy; 2025 Gully Gigs. All rights reserved.</p>
+            </div>
+            <nav class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-md font-medium">
+                <a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-white transition-colors duration-300">FAQ</a>
+                <a href="#" class="hover:text-white transition-colors duration-300">Support</a>
+            </nav>
+            <div class="flex gap-4 mt-6 md:mt-0">
+                <!-- Social Media Icons (placeholders) -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-2xl">&#x21B3;</a> <!-- Placeholder for social icon -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-2xl">&#x21B3;</a> <!-- Placeholder for social icon -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-2xl">&#x21B3;</a> <!-- Placeholder for social icon -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
